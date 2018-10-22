@@ -54,7 +54,7 @@ namespace EjemploHerencia
             return garaje;
         }
 
-        public Boolean MeterVehiculo(CocheSimple c)
+        public bool MeterVehiculo(CocheSimple c)
         {
             //Primero compruebo que el garaje no este lleno, el tope es de 6 vehiculos
             if (garaje.Count < 6)
@@ -74,8 +74,9 @@ namespace EjemploHerencia
                 {
                     return true;
                 }
-                
+                Console.WriteLine("No caben más " + c.GetType().Name + "s en el garaje");
                 Console.ReadLine();
+                return false;
             }
             Console.WriteLine("No caben más " + c.GetType().Name + "s en el garaje");
             Console.ReadLine();

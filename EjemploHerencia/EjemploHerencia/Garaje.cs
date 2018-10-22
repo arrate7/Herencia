@@ -29,7 +29,7 @@ namespace EjemploHerencia
         //Este metodo recibe un objeto del tipo CocheSimple(puede ser: taxi, autobus o cochesimple) y lo añade al garaje si tiene sitio
         public void AñadirCoche(CocheSimple c)
         {
-            //Si el método MeterVehiculo nos devuelve true, añadiremos el taxi
+            //Si el método MeterVehiculo nos devuelve true, añadiremos el vehículo
             if (MeterVehiculo(c))
             {
                 //Si el objeto que queremos meter es un Taxi, le añadimos uno al contador de taxis.

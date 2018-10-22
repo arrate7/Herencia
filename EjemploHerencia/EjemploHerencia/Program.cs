@@ -13,6 +13,7 @@ namespace EjemploHerencia
         {
 
             Taxi t1 = new Taxi("Fiat", "Punto", 120, "abc");
+            Taxi t2 = new Taxi("Fiat", "Punto", 120, "abc");
             Autobus a1 = new Autobus("Alsa", "azul",100,"ztz");
             CocheSimple c1 = new CocheSimple("Ferrari", "Testa Rosa", 180);
 
@@ -31,8 +32,9 @@ namespace EjemploHerencia
             g2.AñadirCoche(t1);
             g2.AñadirCoche(a1);
             g2.AñadirCoche(c1);
+            g2.AñadirCoche(t2);
 
-            foreach (CocheSimple coche in g1.GetGaraje())
+            foreach (CocheSimple coche in g2.GetGaraje())
             {
                 Console.WriteLine(coche.GetType().Name.ToUpper());
                 Console.WriteLine(coche.ToString());

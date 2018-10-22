@@ -16,15 +16,21 @@ namespace EjemploHerencia
             Autobus a1 = new Autobus("Alsa", "azul",100,"ztz");
             CocheSimple c1 = new CocheSimple("Ferrari", "Testa Rosa", 180);
 
+            //Aqui he creado la lista ya llena
             List<CocheSimple> list1 = new List<CocheSimple>()
             {
                 t1,a1,c1
             };
-
+            //He pasado la lista llena y he creado un garaje
             Garaje g1 = new Garaje("Garaje de Arrate",list1);
-            //g1.AñadirCoche(t1);
-            //g1.AñadirCoche(a1);
-            //g1.AñadirCoche(c1);
+
+            //He creado un garaje vacio
+            Garaje g2 = new Garaje("Garaje de Arrate");
+
+            //Con el método AñadirCoche y pasandole el coche que le quiero meter, lleno el garaje
+            g2.AñadirCoche(t1);
+            g2.AñadirCoche(a1);
+            g2.AñadirCoche(c1);
 
             foreach (CocheSimple coche in g1.GetGaraje())
             {

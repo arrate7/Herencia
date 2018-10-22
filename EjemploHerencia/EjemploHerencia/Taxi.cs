@@ -18,6 +18,9 @@ namespace ConsoleApp1
             CodLicencia = lic;
         }
 
-
+        public override string ToString()
+        {
+            return base.ToString() + "\nLicencia: "+CodLicencia;
+        }
     }
 }

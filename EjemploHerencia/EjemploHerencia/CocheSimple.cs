@@ -41,5 +41,10 @@ namespace ConsoleApp1
         {
             this.Marca = marca;
         }
+
+        public override string ToString()
+        {
+            return "Marca: " + Marca + "\nModelo: " + Modelo + "\nVelocidad: " + VelocMax;
+        }
     }
 }

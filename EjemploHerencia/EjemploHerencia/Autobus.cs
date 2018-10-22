@@ -23,5 +23,9 @@ namespace EjemploHerencia
         {
             return base.ToString() + "\nCódigo Autobus: " + CodAutobus;
         }
+        public override string MostrarDatos()
+        {
+            return base.MostrarDatos() + "\nCódigo Autobus: " + CodAutobus;
+        }
     }
 }

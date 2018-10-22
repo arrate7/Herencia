@@ -24,9 +24,11 @@ namespace EjemploHerencia
             foreach(CocheSimple coche in listaCoches)
             {
                 Console.WriteLine(coche.GetType().Name.ToUpper());
-                Console.WriteLine(coche.ToString());
+                Console.WriteLine(coche.MostrarDatos());
                 Console.WriteLine("**************************");
             }
+
+            Console.WriteLine("Número de Vehículos: " + listaCoches.Count);
             Console.Read();
         }
     }

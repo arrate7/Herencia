@@ -24,7 +24,7 @@ namespace ConsoleApp1
         }
         public override string MostrarDatos()
         {
-            return base.MostrarDatos();
+            return base.MostrarDatos() + "\nLicencia: " + CodLicencia; 
         }
 
     }

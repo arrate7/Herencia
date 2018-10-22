@@ -11,6 +11,8 @@ namespace ConsoleApp1
         private int VelocMax;
         private string Marca;
         private string Modelo;
+        private Object a;
+
 
         public CocheSimple(string marca, string mod, int velMax)
         {
@@ -44,7 +46,12 @@ namespace ConsoleApp1
 
         public override string ToString()
         {
-            return "Marca: " + Marca + "\nModelo: " + Modelo + "\nVelocidad: " + VelocMax;
+            return "Marca: " + Marca + "\nModelo: " + Modelo+ "\nVelocidad: " + VelocMax;
+        }
+
+        public virtual string MostrarDatos()
+        {
+            return "Marca: " + Marca + "\nModelo: " + Modelo+  "\nVelocidad: " + VelocMax;
         }
     }
 }

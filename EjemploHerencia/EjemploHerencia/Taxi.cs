@@ -20,7 +20,12 @@ namespace ConsoleApp1
 
         public override string ToString()
         {
-            return base.ToString() + "\nLicencia: "+CodLicencia;
+            return base.ToString() + "\nLicencia: " + CodLicencia;
         }
+        public override string MostrarDatos()
+        {
+            return base.MostrarDatos();
+        }
+
     }
 }

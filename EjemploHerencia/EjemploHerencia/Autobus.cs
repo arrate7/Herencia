@@ -9,19 +9,19 @@ namespace EjemploHerencia
 {
     class Autobus : CocheSimple
     {
-        private string codAutobus;
- 
+        private string CodAutobus;
 
         public Autobus()
         {
         }
-        public Autobus(string marca, string mod, int velMax, string cod) : base(marca,mod,velMax)
+        public Autobus(string marca, string mod, int velMax, string cod) : base(marca, mod, velMax)
         {
-            codAutobus = cod;
+            CodAutobus = cod;
         }
+
         public override string ToString()
         {
-            return base.ToString() + "\nCódigo Autobus: " + codAutobus;
+            return base.ToString() + "\nCódigo Autobus: " + CodAutobus;
         }
     }
 }

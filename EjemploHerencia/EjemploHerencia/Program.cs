@@ -11,23 +11,23 @@ namespace EjemploHerencia
     {
         static void Main(string[] args)
         {
-            //CocheSimple cs1 = new CocheSimple("Ferrari","Testa Rosa", 120);
-            Taxi t1 = new Taxi("Fiat", "Punto", 120, "abc");
-            Autobus a1 = new Autobus("Alsa", "Azul", 100, "ztz");
-            CocheSimple c1 = new CocheSimple("Un coche", "verde", 180);
 
-            List<CocheSimple> listaVehiculos = new List<CocheSimple>()
+            Taxi t1 = new Taxi("Fiat", "Punto", 120, "abc");
+            Autobus a1 = new Autobus("Alsa", "azul",100,"ztz");
+            CocheSimple c1 = new CocheSimple("Ferrari", "Testa Rosa", 180);
+
+            List<CocheSimple> listaCoches = new List<CocheSimple>()
             {
                 t1,a1,c1
             };
-
-            foreach (CocheSimple coche in listaVehiculos)
+            
+            foreach(CocheSimple coche in listaCoches)
             {
+                Console.WriteLine(coche.GetType().Name.ToUpper());
                 Console.WriteLine(coche.ToString());
-                Console.WriteLine("**********************************");
-
+                Console.WriteLine("**************************");
             }
-            Console.ReadLine();
+            Console.Read();
         }
     }
 }

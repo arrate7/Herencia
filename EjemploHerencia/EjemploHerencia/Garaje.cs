@@ -60,13 +60,13 @@ namespace EjemploHerencia
             if (garaje.Count < 6)
             {
                 //si el tipo de vehiculo que quiero meter es un bus y no hay mas buses en el garaje, se puede merter (return true) 
-                if (c.GetType().Name == "Autobus" && numeroAutobuses < 1)
+                if (c.GetType().Name == "Autobus" && numeroAutobuses > 1)
                 {
                     Console.WriteLine("No se pueden meter mas taxis al garaje");
                     return true;
                 }
                 //si el tipo de vehiculo que quiero meter es un taxi y no hay mas taxis en el garaje, se puede merter (return true) 
-                else if (c.GetType().Name == "Taxi" && numeroTaxis < 1)
+                else if (c.GetType().Name == "Taxi" && numeroTaxis > 1)
                 {
                     Console.WriteLine("No se pueden meter mas autobuses al garaje");
                     return true;
